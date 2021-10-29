@@ -8,7 +8,7 @@ Please also note that C# with .NET is cross-platform, so don't feel like you're 
 
 The definitions of the functions to be used and the instructions on configuration are in the wiki.
 
-# MinesweeperConsoke
+# MinesweeperConsole
 This is a console version of Minesweeper. This is meant to be a demonstration of how to properly use the Minesweeper Library to make your own implementation of a Minesweeper game.
 
 This shows how quickly and easily an implementation of Minesweeper can be made in any type of project you want (most people wouldn't make a text based Minesweeper but, it is possible with my library)
