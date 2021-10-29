@@ -470,6 +470,11 @@ namespace MinesweeperLibrary
             return (int)NumberOfColumns;
         }
 
+        /// <summary>
+        /// Gets remaining number of flags. Will go into negatives if user uses too many flags
+        /// (false flagging safe cells)
+        /// </summary>
+        /// <returns>The number of remaining flags</returns>
         public int GetRemainingFlags()
         {
             return (int)RemainingFlags;
