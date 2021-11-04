@@ -8,6 +8,9 @@ Please also note that C# with .NET is cross-platform, so don't feel like you're 
 
 The definitions of the functions to be used and the instructions on configuration are in the wiki.
 
+Install the package through NuGet here:
+https://www.nuget.org/packages/MinesweeperLibrary/
+
 # MinesweeperConsole
 This is a console version of Minesweeper. This is meant to be a demonstration of how to properly use the Minesweeper Library to make your own implementation of a Minesweeper game.
 
