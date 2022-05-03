@@ -37,23 +37,23 @@ namespace MinesweeperLibrary
     public class Board
     {
         //CONSTANTS
-        private uint MIN_ROWS = 1;
-        private uint MAX_ROWS = 50;
-        private uint MIN_COLS = 4;
-        private uint MAX_COLS = 50;
+        public static uint MIN_ROWS { get; private set; } = 1;
+        public static uint MAX_ROWS { get; private set; } = 50;
+        public static uint MIN_COLS { get; private set; } = 4;
+        public static uint MAX_COLS { get; private set; } = 50;
 
         //Datafields
         private Cell[,] CellGrid;
         private bool GameComplete;
         private bool GameLost;
         private bool GameUntouched;
-        private bool IsHeldDown;
+        public bool IsHeldDown { get; private set; }
         private uint NumberOfSquares;
-        private uint NumberOfColumns;
-        private uint NumberOfRows;
+        public uint NumberOfColumns { get; private set; }
+        public  uint NumberOfRows { get; private set; }
         private uint NumberOfBombs;
         private uint RemainingCleanSquares;
-        private uint RemainingFlags;
+        public uint RemainingFlags { get; private set; }
 
         //Constructor
         public Board(int rowNumber, int columnNumber, int bombNumber)

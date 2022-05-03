@@ -7,9 +7,22 @@
     <Product>Minesweeper Library</Product>
     <Description>A C# package/library that acts as a backend for any Minesweeper game. Any frontend dev can hook their UI into this library for the logic of the game, with minimal work or knowledge of the mechanics and algorithms of minesweeper.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Shailosingh/MinesweeperLibrary</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Shailosingh/MinesweeperLibrary</RepositoryUrl>
     <PackageTags>Games, Backend, Multiplatform</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Version>1.0.3</Version>
+    <PackageIcon>Logo.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\compu\Pictures\Minesweeper\Logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
