@@ -53,7 +53,7 @@ namespace MinesweeperLibrary
         public  uint NumberOfRows { get; private set; }
         private uint NumberOfBombs;
         private uint RemainingCleanSquares;
-        public uint RemainingFlags { get; private set; }
+        public int RemainingFlags { get; private set; }
 
         //Constructor
         public Board(int rowNumber, int columnNumber, int bombNumber)
@@ -118,7 +118,7 @@ namespace MinesweeperLibrary
             }
 
             //Remaining flags, clean squares and cell grid-----------------------------------------
-            RemainingFlags = NumberOfBombs;
+            RemainingFlags = (int)NumberOfBombs;
             RemainingCleanSquares = NumberOfSquares - NumberOfBombs;
             CellGrid = new Cell[NumberOfRows, NumberOfColumns];
 
@@ -162,7 +162,7 @@ namespace MinesweeperLibrary
             GameComplete = false;
             GameLost = false;
             GameUntouched = true;
-            RemainingFlags = NumberOfBombs;
+            RemainingFlags = (int)NumberOfBombs;
             RemainingCleanSquares = NumberOfSquares - NumberOfBombs;
             CellGrid = new Cell[NumberOfRows, NumberOfColumns];
 
@@ -477,7 +477,7 @@ namespace MinesweeperLibrary
         /// <returns>The number of remaining flags</returns>
         public int GetRemainingFlags()
         {
-            return (int)RemainingFlags;
+            return RemainingFlags;
         }
 
         /// <summary>
