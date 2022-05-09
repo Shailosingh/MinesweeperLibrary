@@ -351,6 +351,44 @@ namespace MinesweeperLibrary
         }
 
         /// <summary>
+        /// Handles the cancelation of the holding down both left and right mouse button event. 
+        /// This will unhighlight the squares and release the board.
+        /// </summary>
+        /// <param name="row">Row index</param>
+        /// <param name="col">Column index</param>
+        public void BothClickHoldDownCancel(int row, int col)
+        {
+            //Ensure coordinate is valid
+            if (CoordinateIsValid(row, col))
+            {
+                //Get upper left corner square of current square
+                int rowIndexOrigin = row - 1;
+                int colIndexOrigin = col - 1;
+                int rowIndex;
+                int colIndex;
+
+                //Unhighlight all surrounding valid squares and the selected square, if it is not flagged
+                for (int rowOffset = 0; rowOffset < 3; rowOffset++)
+                {
+                    for (int colOffset = 0; colOffset < 3; colOffset++)
+                    {
+                        //Calculate current indices
+                        rowIndex = rowIndexOrigin + rowOffset;
+                        colIndex = colIndexOrigin + colOffset;
+
+                        if (CoordinateIsValid(rowIndex, colIndex) && !CellGrid[row, col].IsFlagged)
+                        {
+                            CellGrid[rowIndex, colIndex].IsHighlighted = false;
+                        }
+                    }
+                }
+
+                //Mark the board as no longer being held down
+                IsHeldDown = false;
+            }
+        }
+
+        /// <summary>
         /// Handles releasing both left and right mouse button event. This will remove the highlight
         /// of every highlighted cell. If a visible cell was being held down and the number of bombs
         /// around the cell is equal to the number of flags, then click all the other cells around 
