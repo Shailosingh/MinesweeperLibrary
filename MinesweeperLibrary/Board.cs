@@ -39,7 +39,7 @@ namespace MinesweeperLibrary
         //CONSTANTS
         public static uint MIN_ROWS { get; private set; } = 1;
         public static uint MAX_ROWS { get; private set; } = 50;
-        public static uint MIN_COLS { get; private set; } = 4;
+        public static uint MIN_COLS { get; private set; } = 8;
         public static uint MAX_COLS { get; private set; } = 50;
 
         //Datafields
