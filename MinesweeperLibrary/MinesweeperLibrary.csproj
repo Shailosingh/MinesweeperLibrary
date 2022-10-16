@@ -16,6 +16,7 @@
     <Version>1.0.7</Version>
     <PackageIcon>Logo.png</PackageIcon>
     <PackageIconUrl />
+    <Title>Minesweeper Library</Title>
   </PropertyGroup>
 
   <ItemGroup>
