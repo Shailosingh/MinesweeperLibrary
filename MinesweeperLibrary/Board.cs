@@ -221,7 +221,7 @@ namespace MinesweeperLibrary
                     {
                         newBombRow = rand.Next(0, (int)NumberOfRows);
                         newBombCol = rand.Next(0, (int)NumberOfColumns);
-                    } while (row != newBombRow && col != newBombCol && CellGrid[newBombRow, newBombCol].IsBomb);
+                    } while (CellGrid[newBombRow, newBombCol].IsBomb);
 
                     CellGrid[newBombRow, newBombCol].IsBomb = true;
                     CellGrid[row, col].IsBomb = false;

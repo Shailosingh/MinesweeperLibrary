@@ -13,13 +13,13 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
-    <Version>1.0.6</Version>
+    <Version>1.0.7</Version>
     <PackageIcon>Logo.png</PackageIcon>
     <PackageIconUrl />
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\..\Pictures\Minesweeper\Logo.png">
+    <None Include="..\..\..\compu\Pictures\Minesweeper\Logo.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
